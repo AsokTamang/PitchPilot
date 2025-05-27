@@ -1,0 +1,15 @@
+import type {StructureResolver} from 'sanity/structure'
+import { author } from './schemaTypes/author'
+import { startup } from './schemaTypes/startup'
+import { Playlist } from './schemaTypes/playlist'
+
+// https://www.sanity.io/docs/structure-builder-cheat-sheet
+export const structure: StructureResolver = (S) =>
+  S.list()
+    .title('Content')
+    .items([
+      S.documentTypeListItem('author').title('Authors'),
+      S.documentTypeListItem('startup').title('Startups'),
+         S.documentTypeListItem('playlist').title('Playlists'),
+
+    ])
