@@ -54,7 +54,7 @@ Create page ->
 
 Author page ->  
 <p style="display:flex; gap:10;">
-  <img src="screenshots/authot1.png" width="45%" />
+  <img src="screenshots/author1.png" width="45%" />
     <img src="screenshots/author2.png" width="45%" />
   
 </p>
