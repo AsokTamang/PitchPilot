@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+PitchPilot is a modern, cloud-based platform built to help startup founders showcase, manage, and track their startup ideas. It provides a clean interface for submitting pitches, connecting with investors, and showcasing founder profiles.
 
-## Getting Started
+---
 
-First, run the development server:
+## 🛠️ Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Frontend:** Next.js 14, Tailwind CSS
+- **Backend/Content:** Sanity CMS
+- **Authentication:** NextAuth.js (with GitHub provider)
+- **Error Monitoring:** Sentry
+- **Database:** Sanity (as a headless CMS with GROQ queries)
+- **Deployment:** Vercel
+- **CI/CD:** GitHub + Vercel auto deploys
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
+## 🧪 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- User Authentication via GitHub
+- Submit and view startup pitches
+- Each startup includes: title, pitch, description, image, author, category, and views
+- View all startups or filter by author
+- Smooth Sanity integration with GROQ queries
+- Sentry-powered error monitoring and logging
+- Clean UI with Tailwind CSS
+- Fully responsive layout
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🔒 Authentication
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Implemented using `NextAuth.js`:
+- OAuth with GitHub
+- Session-based access
+- Author data synced to Sanity on login
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📷 Screenshots
+Home page ->
+<p style="display:flex; gap:10;">
+  <img src="screenshots/home1.png" width="45%" />
+    <img src="screenshots/home2.png" width="45%" />
+  
+</p>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create page -> 
+<p style="display:flex; gap:10;">
+  <img src="screenshots/create1.png" width="45%" />
+    <img src="screenshots/create2.png" width="45%" />
+  
+</p>
+
+Author page ->  
+<p style="display:flex; gap:10;">
+  <img src="screenshots/authot1.png" width="45%" />
+    <img src="screenshots/author2.png" width="45%" />
+  
+</p>
+
+Startup Detail page -> 
+<p style="display:flex; gap:10;">
+  <img src="screenshots/detail1.png" width="45%" />
+    <img src="screenshots/detail2.png" width="45%" />
+     <img src="screenshots/detail3.png" width="45%" />
+  
+</p>
+
+
+
+
